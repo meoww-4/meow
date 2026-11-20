@@ -1,0 +1,986 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#102d25">
+  <meta name="description" content="Explora Puerto Misahuallí y descubre los tesoros del río Napo.">
+  <title>Guardianes del Napo — Aventura en Misahuallí</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
+  <style>
+:root{font-family:"DM Sans",sans-serif;color:#f4f2e8;background:#10251f;font-synthesis:none;text-rendering:optimizeLegibility;--cream:#f3f0e6;--muted:#9caaa0;--lime:#c8e17c;--dark:#10251f}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 76% 48%,#1d3d31 0%,#142e25 39%,#10251f 79%);color:var(--cream)}button{font:inherit}.page-shell{width:min(1320px,calc(100% - 88px));margin:0 auto}.topbar{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff14;color:#a7b2a9;font-size:10px;letter-spacing:.16em}.brand{display:flex;align-items:center;gap:11px;color:#f0f0e8;text-decoration:none;font-weight:700}.brand b{color:var(--lime);padding:0 3px}.brand-mark{display:grid;place-items:center;width:27px;height:27px;border-radius:50%;border:1px solid #8fae75;color:var(--lime);font-size:17px}.topbar-right{display:flex;align-items:center;gap:9px}.live-dot{width:6px;height:6px;background:var(--lime);border-radius:50%;box-shadow:0 0 10px #c8e17c99}.game-layout{display:grid;grid-template-columns:minmax(280px,.76fr) minmax(570px,1.55fr);gap:64px;align-items:center;padding:64px 0 49px}.intro-panel{max-width:390px}.eyebrow{color:#bedc8d;font-size:10px;letter-spacing:.16em;font-weight:700}.eyebrow span{font-size:15px;margin-right:5px}h1{font:700 clamp(50px,5.5vw,76px)/.98 Outfit,sans-serif;letter-spacing:-.055em;margin:23px 0 19px}h1 em{font-style:normal;color:#c8e17c}.lede{color:#b4bdb5;font-size:14px;line-height:1.8;max-width:355px;margin:0 0 27px}.mission-card{display:flex;gap:15px;padding:17px 16px;background:#ffffff0a;border:1px solid #ffffff14;border-radius:9px}.mission-icon{flex:none;width:36px;height:36px;border-radius:8px;background:#b9d66f1b;color:var(--lime);display:grid;place-items:center;font-size:22px}.card-kicker{font-size:9px;letter-spacing:.12em;color:#adbcab;margin:1px 0 6px}.card-kicker span{color:var(--lime);padding:0 4px}.mission-card strong{font:600 17px Outfit,sans-serif}.mission-card p{color:#9eaaa0;font-size:11px;line-height:1.5;margin:5px 0 0}.stats-row{display:flex;gap:23px;margin:27px 0 0}.stats-row>div{display:flex;align-items:center;gap:8px}.stat-icon{color:#bbd77f;font-size:18px}.stats-row b,.stats-row small{display:block}.stats-row b{font:600 15px Outfit,sans-serif}.stats-row small{color:#82938a;font-size:8px;letter-spacing:.08em;margin-top:2px}.credit{color:#849289;font-size:10px;margin-top:31px}.play-panel{min-width:0;background:#172d25;border:1px solid #ffffff19;border-radius:13px;padding:14px;box-shadow:0 25px 80px #06120e70}.game-topline{display:flex;justify-content:space-between;align-items:center;padding:5px 5px 13px}.location,.score-box{display:flex;align-items:center;gap:9px}.location-pin{font-size:23px;color:var(--lime)}.location small,.score-box small,.objective small{display:block;color:#93a198;font-size:8px;letter-spacing:.12em;margin-bottom:3px}.location strong{font:600 13px Outfit,sans-serif}.score-star{font-size:19px;color:var(--lime)}.score-box strong{font:600 16px Outfit,sans-serif;letter-spacing:.1em}.game-frame{position:relative;overflow:hidden;border-radius:8px;background:#608c56;aspect-ratio:800/470;min-height:300px}#game-container{width:100%;height:100%;display:block}.game-frame canvas{display:block}.welcome-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(90deg,#0c2015dc 0%,#12271bc4 42%,#12271b69 100%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Cpath fill='%232b593e' d='M375 0h225v400H310Q400 260 345 160z'/%3E%3Cpath fill='%23377348' d='M440 0h160v400H365q75-155 10-260z'/%3E%3Cpath fill='%234b7449' d='M600 55Q485 30 420 155t100 70q-96 85 80 145z'/%3E%3C/svg%3E") center/cover;transition:opacity .45s,visibility .45s}.welcome-overlay.hidden{opacity:0;visibility:hidden;pointer-events:none}.welcome-content{width:100%;padding:30px 9%;position:relative;z-index:1}.welcome-kicker{font-size:9px;letter-spacing:.2em;color:#d2e8a3}.welcome-content h2{font:600 clamp(27px,3.2vw,43px)/1.08 Outfit,sans-serif;letter-spacing:-.035em;margin:13px 0 9px}.welcome-content p{font-size:12px;color:#ced4c7;margin:0 0 20px}.start-button{background:#c8e17c;color:#1d301e;border:0;border-radius:5px;padding:12px 16px;font-weight:700;font-size:11px;cursor:pointer;transition:transform .18s,background .18s}.start-button span{font-size:17px;margin-left:11px;vertical-align:-1px}.start-button:hover{background:#d7eb9a;transform:translateY(-2px)}.welcome-content>small{display:block;margin-top:13px;font-size:9px;color:#c1cabc}.sound-toggle{position:absolute;z-index:2;right:12px;bottom:12px;width:32px;height:32px;border-radius:50%;border:1px solid #ffffff60;color:#fff;background:#13291f9c;cursor:pointer;font-size:15px}.game-footer{display:flex;align-items:center;justify-content:space-between;padding:14px 4px 3px;gap:12px}.objective{display:flex;align-items:center;gap:9px}.objective-icon{font-size:20px;color:var(--lime)}.objective strong{font-size:10px;font-weight:600}.controls{display:flex;align-items:center;gap:4px;color:#a9b3aa;font-size:9px}.controls>span:first-child{font-size:8px;letter-spacing:.1em;margin-right:3px}.controls kbd{font:600 9px "DM Sans";color:#e3e7dc;background:#ffffff12;border:1px solid #ffffff20;border-radius:3px;min-width:18px;text-align:center;padding:3px}.controls i{font-style:normal;color:#829087;margin:0 3px}.arrows{letter-spacing:.12em}.hint{color:#829087;margin-left:2px}.toast{position:absolute;bottom:17px;left:50%;transform:translate(-50%,12px);padding:9px 14px;background:#10251feF;border:1px solid #d3e8a365;border-radius:5px;color:#f5f2e9;font-size:11px;opacity:0;transition:.25s;pointer-events:none;white-space:nowrap}.toast.show{opacity:1;transform:translate(-50%,0)}.page-footer{border-top:1px solid #ffffff14;padding:19px 0 26px;display:flex;justify-content:space-between;color:#77877e;font-size:8px;letter-spacing:.15em}.page-footer b{color:#bfdc81;margin:0 6px}
+@media(max-width:900px){.page-shell{width:min(760px,calc(100% - 36px))}.game-layout{grid-template-columns:1fr;gap:27px;padding:40px 0}.intro-panel{max-width:none}.lede{max-width:580px}.mission-card{max-width:450px}.stats-row{margin-top:19px}.credit{display:none}.play-panel{width:100%}h1{font-size:58px;margin:15px 0}.game-layout{padding-top:34px}}@media(max-width:560px){.page-shell{width:calc(100% - 24px)}.topbar{height:61px;font-size:8px}.topbar-right{font-size:7px}.game-layout{padding:28px 0;gap:23px}.intro-panel .eyebrow{font-size:8px}h1{font-size:49px}.lede{font-size:12px;line-height:1.65;margin-bottom:18px}.mission-card{padding:12px}.stats-row{gap:15px}.stats-row small{font-size:7px}.play-panel{padding:9px;border-radius:9px}.location strong{font-size:11px}.game-frame{min-height:245px;aspect-ratio:1.25}.game-footer{align-items:flex-start;flex-direction:column;padding:11px 3px 3px}.controls{flex-wrap:wrap}.hint{font-size:8px}.welcome-content{padding:24px 7%}.welcome-content h2{font-size:31px}.page-footer{font-size:7px}.toast{max-width:90%;white-space:normal;text-align:center}}
+.phase-overlay{position:absolute;z-index:5;inset:0;display:grid;place-items:center;padding:18px;background:#0b1b14bd;backdrop-filter:blur(4px);opacity:1;transition:opacity .2s}.phase-overlay.hidden{display:none}.phase-card{width:min(460px,94%);padding:25px 28px;border:1px solid #eff7cc35;border-radius:12px;background:linear-gradient(145deg,#1d3a2e,#14291f);box-shadow:0 20px 55px #07130e80;text-align:left}.phase-kicker{font-size:9px;font-weight:700;letter-spacing:.19em;color:#c8e17c}.phase-card h2{font:600 clamp(25px,3vw,37px)/1.08 Outfit,sans-serif;letter-spacing:-.035em;margin:11px 0 9px;color:#f5f2e9}.phase-card p{font-size:13px;line-height:1.7;color:#bbc7bb;margin:0 0 19px}.phase-card .start-button{min-width:155px}.phase-overlay:focus-within .start-button{outline:2px solid #f6f5e7;outline-offset:3px}
+
+:root{color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{touch-action:manipulation;-webkit-tap-highlight-color:transparent}.game-frame{user-select:none;-webkit-user-select:none}
+.touch-pad{display:none}.stick-base{position:relative;width:132px;height:132px;border-radius:50%;background:#ffffff14;border:1px solid #ffffff33;touch-action:none;user-select:none;-webkit-user-select:none}.stick-knob{position:absolute;left:50%;top:50%;width:56px;height:56px;margin:-28px 0 0 -28px;border-radius:50%;background:#c8e17ccc;box-shadow:0 4px 14px #0007;pointer-events:none}
+@media(max-width:900px){.game-frame{min-height:0;aspect-ratio:800/470}}
+.phase-overlay{backdrop-filter:none;-webkit-backdrop-filter:none;background:#0b1b14d9}
+:root{--lime:#c8562a;--cream:#2d3b2b;color:#2d3b2b;background:#f3ead4;color-scheme:light}
+body{color:#2d3b2b;background:radial-gradient(60% 50% at 6% 4%,#cfe3b4 0,#cfe3b400 70%),radial-gradient(50% 45% at 98% 28%,#f2c9a0 0,#f2c9a000 70%),radial-gradient(60% 50% at 18% 100%,#bcd9c3 0,#bcd9c300 70%),#f3ead4}
+.topbar{color:#6d7a62;border-bottom:1px dashed #b9a97f}.brand{color:#2d3b2b}.brand-mark{border-color:#c8562a}.live-dot{box-shadow:0 0 10px #c8562a88}
+h1,.mission-card strong,.stats-row b,.location strong,.score-box strong{font-family:Fraunces,Georgia,serif}h1{font-weight:700;letter-spacing:-.03em;color:#27402c}h1 em{font-style:italic;color:#c8562a}
+.eyebrow{color:#5f8a3d}.lede{color:#51604c}.credit,.stats-row small{color:#7b8a70}.stat-icon{color:#c8562a}
+.mission-card{background:#fffaf0;border:1px solid #e3d5ae;border-radius:30px 22px 34px 20px/22px 30px 20px 34px;box-shadow:0 10px 30px #8a6a2e1f}.card-kicker{color:#7b8a70}.mission-card p{color:#5e6b58}.mission-icon{background:#c8562a1f}
+.play-panel{background:#fbf4e1;border:1px solid #e3d5ae;border-radius:44px 30px 48px 28px/30px 46px 28px 50px;padding:18px;box-shadow:0 24px 60px #7a5a2a30}
+.game-frame{border-radius:28px 20px 32px 22px/22px 30px 20px 32px;box-shadow:0 0 0 5px #fffaf0,0 0 0 6px #d9c898}
+.location small,.score-box small,.objective small{color:#7b8a70}.controls{color:#6d7a62}.controls kbd{color:#2d3b2b;background:#fffaf0;border-color:#d9c898}.controls i,.hint{color:#8a9680}
+.page-footer{color:#7b8a70;border-top:1px dashed #b9a97f}.page-footer b{color:#c8562a}
+.stick-base{background:#2d3b2b14;border-color:#2d3b2b44}.stick-knob{background:#c8562acc}
+.postales{padding:6px 0 54px}.postales h2{font:700 clamp(28px,3.4vw,42px)/1.05 Fraunces,Georgia,serif;letter-spacing:-.02em;color:#27402c;margin:0 0 8px}.postales>p{color:#5e6b58;font-size:14px;line-height:1.7;margin:0 0 28px;max-width:540px}
+.photo-row{display:grid;grid-template-columns:1.1fr 1fr 1.1fr;gap:28px;align-items:start}.photo{margin:0;overflow:hidden;background:#fffaf0;padding:10px 10px 14px;border:1px solid #e3d5ae;box-shadow:0 14px 34px #7a5a2a26}
+.photo:nth-child(1){border-radius:220px 220px 28px 28px;transform:rotate(-1.2deg)}.photo:nth-child(2){border-radius:28px 100px 28px 100px;transform:translateY(22px) rotate(1deg)}.photo:nth-child(3){border-radius:100px 28px 100px 28px;transform:rotate(-.6deg)}
+.photo svg,.photo img{display:block;width:100%;height:auto;aspect-ratio:4/4.6;object-fit:cover;border-radius:inherit}.photo:nth-child(1) svg{border-radius:210px 210px 20px 20px}.photo:nth-child(2) svg{border-radius:20px 90px 20px 90px}.photo:nth-child(3) svg{border-radius:90px 20px 90px 20px}
+.photo figcaption{font:italic 500 15px Fraunces,Georgia,serif;color:#4d5d4b;padding:12px 12px 0;text-align:center}
+@media(max-width:700px){.photo-row{grid-template-columns:1fr;gap:22px}.photo:nth-child(n){transform:none}}
+.touch-pad{-webkit-touch-callout:none;touch-action:none;user-select:none;-webkit-user-select:none}
+@media(hover:none) and (pointer:coarse){.touch-pad{position:relative;display:block;width:100%;height:150px;padding:0;margin-top:8px;border-radius:24px;background:#2d3b2b0d}.stick-base{position:absolute;left:var(--bx,50%);top:var(--by,50%);width:124px;height:124px;margin:0;transform:translate(-50%,-50%);transition:left .18s ease,top .18s ease,opacity .18s;opacity:.75}.touch-pad.active .stick-base{transition:none;opacity:1}.stick-knob{will-change:transform;transition:transform .12s ease-out}.touch-pad.active .stick-knob{transition:none}}
+@media(hover:none) and (pointer:coarse) and (orientation:landscape) and (max-height:540px){.touch-pad{position:fixed;left:0;bottom:0;width:46vw;height:64vh;margin:0;padding:0;border-radius:0;background:none;opacity:1;z-index:20;--bx:calc(76px + env(safe-area-inset-left,0px));--by:calc(100% - 78px)}.stick-base{width:116px;height:116px}}
+@media(max-width:560px){.welcome-content{padding:14px 6%}.welcome-content h2{font-size:24px;margin:8px 0 6px}.welcome-content p{margin:0 0 12px;font-size:11px}.welcome-content>small{display:none}.phase-overlay{position:fixed;z-index:50}}
+@media(hover:none) and (pointer:coarse){.touch-pad{display:flex;justify-content:center;padding:14px 0 4px}.controls,.topbar-right{display:none}.game-footer{padding-top:10px}}
+@media(hover:none) and (pointer:coarse) and (orientation:landscape) and (max-height:540px){.page-shell{width:calc(100% - 24px)}.topbar,.intro-panel,.page-footer{display:none}.game-layout{display:block;padding:8px 0}.play-panel{padding:8px}.game-frame{margin:0 auto;width:min(100%,calc((100vh - 110px)*800/470));width:min(100%,calc((100dvh - 110px)*800/470))}.touch-pad{position:fixed;left:calc(18px + env(safe-area-inset-left,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px));padding:0;z-index:20;opacity:.8}.stick-base{width:116px;height:116px}.game-footer{padding-top:6px}.phase-overlay{position:fixed;z-index:50}}
+</style>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Guardianes del Napo, inicio">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span>RUTAS DEL ECUADOR <b>·</b> NAPO</span>
+      </a>
+      <div class="topbar-right"><span class="live-dot"></span><span>AVENTURA INTERACTIVA</span></div>
+    </header>
+
+    <section class="game-layout" id="inicio" aria-label="Videojuego Guardianes del Napo">
+      <aside class="intro-panel">
+        <div class="eyebrow"><span>✦</span> TU PRÓXIMA GRAN AVENTURA</div>
+        <h1>Guardianes<br>del <em>Napo</em></h1>
+        <p class="lede">La selva te está llamando. Explora Misahuallí, conoce a sus habitantes y descubre por qué cada rincón merece ser protegido.</p>
+        <div class="mission-card">
+          <div class="mission-icon" aria-hidden="true">⌖</div>
+          <div><div class="card-kicker" id="mission-label">DESTINO 01 <span>·</span> EN CURSO</div><strong id="mission-title">La entrada del puerto</strong><p id="mission-copy">Recorre Misahuallí y descubre sus historias.</p></div>
+        </div>
+        <div class="stats-row">
+          <div><span class="stat-icon">◎</span><span><b>05</b><small>DESTINOS</small></span></div>
+          <div><span class="stat-icon">♧</span><span><b>10</b><small>LUCES DE DATOS</small></span></div>
+          <div><span class="stat-icon">☆</span><span><b>∞</b><small>AVENTURAS</small></span></div>
+        </div>
+        <p class="credit">Una experiencia para descubrir y cuidar la Amazonía ecuatoriana.</p>
+      </aside>
+
+      <section class="play-panel" aria-label="Zona de juego">
+        <div class="game-topline">
+          <div class="location"><span class="location-pin">⌖</span><span><small id="location-kicker">DESTINO 01 DE 05</small><strong id="location-name">Entrada del puerto</strong></span></div>
+          <div class="score-box"><span class="score-star">★</span><span><small>PUNTOS</small><strong id="score">000</strong></span></div>
+        </div>
+        <div class="game-frame">
+          <div id="game-container" aria-label="Mapa interactivo; muévete con WASD o las flechas"></div>
+          <div id="welcome-overlay" class="welcome-overlay">
+            <div class="welcome-content">
+              <span class="welcome-kicker">NAPO · ECUADOR</span>
+              <h2>El río guarda<br>muchas historias.</h2>
+              <p>Explora cinco rincones del puerto y descubre sus historias.</p>
+              <button id="start-button" class="start-button">Comenzar recorrido <span>→</span></button>
+              <small>Sin prisa. La selva te espera.</small>
+            </div>
+          </div>
+          <div id="phase-overlay" class="phase-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="phase-title">
+            <div class="phase-card"><span class="phase-kicker" id="phase-kicker">DESTINO</span><h2 id="phase-title"></h2><p id="phase-copy"></p><button id="phase-button" class="start-button">Continuar <span>→</span></button></div>
+          </div>
+          <div id="toast" class="toast" role="status" aria-live="polite"></div>
+          <button id="sound-toggle" class="sound-toggle" type="button" aria-label="Activar sonidos" title="Activar o desactivar sonidos">♫</button>
+        </div>
+        <div id="joy-zone" class="touch-pad" aria-label="Joystick para moverte"><div id="joy-base" class="stick-base"><div id="joy-knob" class="stick-knob"></div></div></div>
+        <div class="game-footer">
+          <div class="objective"><span class="objective-icon">✧</span><span><small id="objective-label">OBJETIVO</small><strong id="objective-text">Encuentra 5 luces de datos</strong></span></div>
+          <div class="controls"><span>MOVER</span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><i>o</i><span class="arrows">↑ ↓ ← →</span><span id="controls-hint" class="hint">· Acércate a las luces</span></div>
+        </div>
+      </section>
+    </section>
+    <section class="postales" aria-label="Postales de Misahuallí">
+      <h2>Postales de Misahuallí</h2>
+      <p>Arena clara, río café verdoso y selva por todos lados: así se vive este rincón del Napo.</p>
+      <div class="photo-row">
+        <figure class="photo"><svg viewBox="0 0 300 345" role="img" aria-label="Ilustración de la playa de Misahuallí"><rect width="300" height="345" fill="#f7dfb0"/><circle cx="215" cy="92" r="38" fill="#f2a65a"/><path d="M0 175Q60 125 130 165T300 145V345H0Z" fill="#4f8a5c"/><path d="M0 218Q80 192 160 214T300 202V345H0Z" fill="#6fa57a"/><rect y="252" width="300" height="93" fill="#5f9aa0"/><path d="M0 288Q75 272 150 288T300 282V345H0Z" fill="#e2c88f"/><path d="M92 266q58 24 116 0l-15 17h-86z" fill="#8a5a36"/></svg><figcaption>La playa del puerto</figcaption></figure>
+        <figure class="photo"><svg viewBox="0 0 300 345" role="img" aria-label="Ilustración del río Napo"><rect width="300" height="345" fill="#cfe3d2"/><path d="M0 120Q90 70 180 110T300 90V0H0Z" fill="#3b7a50"/><path d="M0 175Q80 140 170 170T300 150V345H0Z" fill="#4d8a86"/><path d="M0 235Q100 205 200 235T300 220V345H0Z" fill="#5fa0a0"/><path d="M70 255q60 20 120 0l-12 14h-96z" fill="#8a5a36"/><ellipse cx="220" cy="300" rx="24" ry="9" fill="#d5a94f"/><path d="M240 300l16-9v18z" fill="#d5a94f"/></svg><figcaption>El río Napo</figcaption></figure>
+        <figure class="photo"><svg viewBox="0 0 300 345" role="img" aria-label="Ilustración de la selva de Misahuallí"><rect width="300" height="345" fill="#e6efc9"/><circle cx="70" cy="70" r="30" fill="#f4d27a"/><path d="M0 150Q70 90 150 140T300 120V345H0Z" fill="#2f6a43"/><path d="M0 215Q90 160 190 210T300 190V345H0Z" fill="#3f8a4f"/><rect x="58" y="170" width="12" height="175" fill="#6b4a30"/><circle cx="64" cy="160" r="46" fill="#4c9a5a"/><circle cx="214" cy="262" r="22" fill="#805b3e"/><circle cx="214" cy="266" r="11" fill="#e5c59b"/></svg><figcaption>Selva y monos capuchinos</figcaption></figure>
+      </div>
+    </section>
+    <footer class="page-footer"><span>UN VIAJE POR LA AMAZONÍA ECUATORIANA</span><span>PUERTO MISAHUALLÍ <b>✳</b> RÍO NAPO</span></footer>
+  </main>
+<script>
+/* Guardianes del Napo — recorrido jugable por Puerto Misahuallí.
+   Los datos turísticos están basados en el PDOT del GAD Municipal de Tena. */
+(() => {
+  const W = 800;
+  const H = 470;
+  const SCALE = window.matchMedia && window.matchMedia('(pointer: coarse)').matches ? 1.5 : 2; // dibuja al doble de resolución para que se vea nítido
+  const entryFacts = [
+    { title: "Bienvenida a Napo", text: "Puerto Misahuallí es una parroquia rural del cantón Tena, en la provincia de Napo." },
+    { title: "Una playa de río", text: "El PDOT de Tena describe el balneario natural de Misahuallí por sus arenas blancas junto al río." },
+    { title: "Cerca de Tena", text: "Puerto Misahuallí está aproximadamente a 30 minutos de la ciudad de Tena." },
+    { title: "Bosque vivo", text: "El bosque húmedo que rodea la localidad es hábitat de monos capuchinos." },
+    { title: "Laguna Paikawe", text: "La Laguna Paikawe aparece entre los atractivos turísticos de Puerto Misahuallí." }
+  ];
+  const beachFacts = [
+    { title: "Isla Playa de los Monos", text: "El plan turístico de Tena registra la isla como un atractivo de bosque de Puerto Misahuallí." },
+    { title: "Mirador Shipati", text: "Shipati es uno de los miradores naturales registrados en la parroquia." },
+    { title: "Kamak Maki", text: "El Museo Cultural Kamak Maki forma parte de los atractivos turísticos de Puerto Misahuallí." },
+    { title: "Ecoselva", text: "El orquideario Ecoselva está incluido entre los atractivos de la parroquia." },
+    { title: "Rutas por el Napo", text: "El municipio destaca a Puerto Misahuallí como punto de turismo fluvial y de selva." }
+  ];
+
+  const ui = {
+    score: document.getElementById("score"),
+    overlay: document.getElementById("welcome-overlay"),
+    phase: document.getElementById("phase-overlay"),
+    phaseKicker: document.getElementById("phase-kicker"),
+    phaseTitle: document.getElementById("phase-title"),
+    phaseCopy: document.getElementById("phase-copy"),
+    phaseButton: document.getElementById("phase-button"),
+    toast: document.getElementById("toast"),
+    objectiveLabel: document.getElementById("objective-label"),
+    objective: document.getElementById("objective-text"),
+    controls: document.getElementById("controls-hint"),
+    locationKicker: document.getElementById("location-kicker"),
+    location: document.getElementById("location-name"),
+    missionLabel: document.getElementById("mission-label"),
+    missionTitle: document.getElementById("mission-title"),
+    missionCopy: document.getElementById("mission-copy"),
+    sound: document.getElementById("sound-toggle")
+  };
+
+  let sceneRef = null;
+  let score = 0;
+  let soundOn = false;
+  let audioContext = null;
+  const touchMove = { x: 0, y: 0, power: 0 };
+
+  // Joystick flotante: aparece donde pones el pulgar, en una zona grande, y no hace cálculos de diseño mientras te mueves.
+  (() => {
+    const zone = document.getElementById('joy-zone');
+    const base = document.getElementById('joy-base');
+    const knob = document.getElementById('joy-knob');
+    if (!zone || !base || !knob) return;
+    let activeId = null, cx = 0, cy = 0, limit = 40, frame = 0, kx = 0, ky = 0;
+    const paint = () => { frame = 0; knob.style.transform = `translate3d(${kx}px, ${ky}px, 0)`; };
+    const schedule = () => { if (!frame) frame = requestAnimationFrame(paint); };
+    const reset = () => {
+      activeId = null; touchMove.x = 0; touchMove.y = 0; touchMove.power = 0; kx = 0; ky = 0;
+      zone.classList.remove('active'); base.style.left = ''; base.style.top = '';
+      schedule();
+    };
+    const aim = event => {
+      let dx = event.clientX - cx, dy = event.clientY - cy;
+      const dist = Math.hypot(dx, dy);
+      if (dist > limit) { dx = dx / dist * limit; dy = dy / dist * limit; }
+      kx = dx; ky = dy;
+      const raw = Math.min(1, dist / limit);
+      const power = raw < 0.15 ? 0 : (raw - 0.15) / 0.85;
+      touchMove.x = power ? dx : 0; touchMove.y = power ? dy : 0; touchMove.power = power;
+      schedule();
+    };
+    zone.addEventListener('pointerdown', event => {
+      if (activeId !== null) return;
+      event.preventDefault();
+      activeId = event.pointerId;
+      try { zone.setPointerCapture(activeId); } catch (_) {}
+      const rect = zone.getBoundingClientRect();
+      const radius = base.offsetWidth / 2;
+      limit = radius * 0.7;
+      const px = Math.min(Math.max(event.clientX - rect.left, radius), Math.max(radius, rect.width - radius));
+      const py = Math.min(Math.max(event.clientY - rect.top, radius), Math.max(radius, rect.height - radius));
+      base.style.left = px + 'px'; base.style.top = py + 'px';
+      cx = rect.left + px; cy = rect.top + py;
+      zone.classList.add('active');
+      aim(event);
+    });
+    zone.addEventListener('pointermove', event => { if (event.pointerId === activeId) { event.preventDefault(); aim(event); } });
+    ['pointerup', 'pointercancel', 'lostpointercapture'].forEach(type => zone.addEventListener(type, event => { if (event.pointerId === activeId) reset(); }));
+    window.addEventListener('blur', reset);
+    document.addEventListener('visibilitychange', () => { if (document.hidden) reset(); });
+    zone.addEventListener('contextmenu', event => event.preventDefault());
+  })();
+
+  (() => {
+    const base = document.getElementById("stick-base");
+    const knob = document.getElementById("stick-knob");
+    if (!base || !knob) return;
+    let activeId = null;
+    const update = event => {
+      const rect = base.getBoundingClientRect();
+      const radius = rect.width / 2;
+      let dx = event.clientX - (rect.left + radius);
+      let dy = event.clientY - (rect.top + radius);
+      const dist = Math.hypot(dx, dy);
+      const limit = radius * 0.62;
+      if (dist > limit) { dx = dx / dist * limit; dy = dy / dist * limit; }
+      knob.style.transform = `translate(${dx}px, ${dy}px)`;
+      const power = Math.min(1, Math.hypot(dx, dy) / limit);
+      if (power < 0.2) { touchMove.x = 0; touchMove.y = 0; touchMove.power = 0; }
+      else { touchMove.x = dx; touchMove.y = dy; touchMove.power = power; }
+    };
+    const release = event => {
+      if (event.pointerId !== activeId) return;
+      activeId = null;
+      knob.style.transform = "";
+      touchMove.x = 0; touchMove.y = 0; touchMove.power = 0;
+    };
+    base.addEventListener("pointerdown", event => { activeId = event.pointerId; base.setPointerCapture(event.pointerId); update(event); event.preventDefault(); });
+    base.addEventListener("pointermove", event => { if (event.pointerId === activeId) update(event); });
+    base.addEventListener("pointerup", release);
+    base.addEventListener("pointercancel", release);
+  })();
+
+  function announce(message, duration = 3200) {
+    ui.toast.textContent = message;
+    ui.toast.classList.add("show");
+    clearTimeout(announce.timer);
+    announce.timer = setTimeout(() => ui.toast.classList.remove("show"), duration);
+  }
+
+  function playTone(frequency = 660) {
+    if (!soundOn) return;
+    try {
+      audioContext ||= new (window.AudioContext || window.webkitAudioContext)();
+      const oscillator = audioContext.createOscillator();
+      const gain = audioContext.createGain();
+      oscillator.type = "sine";
+      oscillator.frequency.value = frequency;
+      gain.gain.setValueAtTime(0.07, audioContext.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, audioContext.currentTime + 0.18);
+      oscillator.connect(gain);
+      gain.connect(audioContext.destination);
+      oscillator.start();
+      oscillator.stop(audioContext.currentTime + 0.19);
+    } catch (_) {
+      // El juego funciona aunque el navegador no ofrezca audio.
+    }
+  }
+
+  document.getElementById("start-button").addEventListener("click", () => {
+    if (!window.Phaser) {
+      announce("No se pudo cargar Phaser. Revisa tu conexión a internet y recarga la página.", 6000);
+    } else if (sceneRef) {
+      sceneRef.beginAdventure();
+    } else {
+      announce("El recorrido todavía se está preparando. Inténtalo de nuevo en un momento.");
+    }
+  });
+
+  ui.phaseButton.addEventListener("click", () => {
+    if (!sceneRef || !sceneRef.pendingContinue) return;
+    const continueAction = sceneRef.pendingContinue;
+    sceneRef.pendingContinue = null;
+    ui.phase.classList.add("hidden");
+    continueAction();
+  });
+
+  ui.sound.addEventListener("click", () => {
+    soundOn = !soundOn;
+    ui.sound.textContent = soundOn ? "♫" : "♪";
+    ui.sound.setAttribute("aria-label", soundOn ? "Desactivar sonidos" : "Activar sonidos");
+    if (soundOn) playTone(520);
+    announce(soundOn ? "Sonidos activados" : "Sonidos desactivados");
+  });
+
+  class PortAdventureScene extends Phaser.Scene {
+    constructor() {
+      super("PortAdventureScene");
+      this.stage = "title";
+      this.waiting = false;
+      this.started = false;
+      this.pendingContinue = null;
+      this.discovered = new Set();
+      this.dynamicObjects = [];
+      this.markers = [];
+      this.obstacles = [];
+      this.lives = 3;
+      this.elapsed = 0;
+      this.spawnElapsed = 0;
+      this.fishIndex = 0;
+      this.hitCooldown = 0;
+      this.clockText = -1;
+    }
+
+    create() {
+      this.cameras.main.setZoom(SCALE).centerOn(W / 2, H / 2);
+      this.cursors = this.input.keyboard.createCursorKeys();
+      this.keys = this.input.keyboard.addKeys("W,A,S,D");
+      this.input.keyboard.on("keydown-ENTER", () => {
+        if (this.stage === "title") this.beginAdventure();
+        else if (this.pendingContinue) ui.phaseButton.click();
+      });
+      this.startStage("entry", false);
+      this.stage = "title";
+      this.started = false;
+      sceneRef = this;
+    }
+
+    beginAdventure() {
+      if (this.stage !== "title") return;
+      score = 0;
+      ui.score.textContent = "000";
+      this.started = true;
+      ui.overlay.classList.add("hidden");
+      this.startStage("entry", false);
+      announce("Destino 1 de 5 · Busca las cinco luces de datos.");
+    }
+
+    startStage(stage, showBrief = true) {
+      this.cleanStage();
+      this.stage = stage;
+      this.started = true;
+      this.waiting = false;
+      this.elapsed = 0;
+      this.spawnElapsed = 0;
+      this.fishIndex = 0;
+      this.hitCooldown = 0;
+      this.clockText = -1;
+      this.lives = 3;
+      this.discovered = new Set();
+      this.obstacles = [];
+      this.markers = [];
+      this.dynamicObjects = [];
+
+      const settings = {
+        entry: { index: 1, name: "Entrada del puerto", title: "Las luces de bienvenida", copy: "Encuentra cinco bolitas de luz para conocer Misahuallí.", objective: "Encuentra las 5 luces de datos", hint: "· Acércate a cada luz" },
+        monkeys: { index: 2, name: "Sendero a la playa", title: "Esquiva a los monitos", copy: "Muévete de lado a lado y evita a los monos que cruzan el sendero durante 25 segundos.", objective: "25 s · 3 oportunidades", hint: "· Evita los monos" },
+        tourists: { index: 3, name: "Playa de Misahuallí", title: "Llega hasta el bote", copy: "Desde la playa, baja hasta el bote en el agua esquivando a los visitantes.", objective: "Llega al bote · 3 oportunidades", hint: "· Ve hacia el río sin chocar" },
+        boat: { index: 4, name: "Río Napo", title: "Cruza en bote", copy: "Navega durante 30 segundos y mantén distancia de los peces del río Napo para llegar a la otra parte de la playa.", objective: "30 s · 3 oportunidades", hint: "· Evita peces del Napo" },
+        beach: { index: 5, name: "La otra orilla", title: "Luces de la otra playa", copy: "Encuentra cinco nuevas luces para descubrir otros atractivos de Misahuallí.", objective: "Encuentra las 5 luces de datos", hint: "· Acércate a cada luz" }
+      }[stage];
+
+      this.drawStage(stage);
+      this.createPlayer(stage === "boat" ? "boat" : "walker");
+      if (stage === "entry" || stage === "beach") this.createFactLights(stage === "entry" ? entryFacts : beachFacts);
+      this.updateLocation(settings);
+
+      if (stage === "monkeys") this.createTrailMonkeys();
+      if (stage === "tourists") { this.createTouristRows(); this.createLocalHosts(); }
+      this.setObjective(stage === "monkeys" ? "TIEMPO" : stage === "boat" ? "TIEMPO" : stage === "tourists" ? "META" : "OBJETIVO", settings.objective, settings.hint);
+
+      if (showBrief) {
+        this.showCard(`DESTINO ${settings.index} · 05`, settings.title, settings.copy, "Comenzar", () => { this.waiting = false; });
+      }
+    }
+
+    updateLocation(info) {
+      ui.locationKicker.textContent = `DESTINO ${info.index} DE 05`;
+      ui.location.textContent = info.name;
+      ui.missionLabel.innerHTML = `DESTINO ${info.index} <span>·</span> EN CURSO`;
+      ui.missionTitle.textContent = info.title;
+      ui.missionCopy.textContent = info.copy;
+    }
+
+    setObjective(label, text, hint) {
+      ui.objectiveLabel.textContent = label;
+      ui.objective.textContent = text;
+      ui.controls.textContent = hint;
+    }
+
+    showCard(kicker, title, copy, buttonText, action) {
+      this.waiting = true;
+      this.pendingContinue = action;
+      ui.phaseKicker.textContent = kicker;
+      ui.phaseTitle.textContent = title;
+      ui.phaseCopy.textContent = copy;
+      ui.phaseButton.innerHTML = `${buttonText} <span>→</span>`;
+      ui.phase.classList.remove("hidden");
+      ui.phaseButton.focus();
+    }
+
+    cleanStage() {
+      this.tweens.killAll();
+      if (this.worldGraphics) this.worldGraphics.destroy();
+      this.dynamicObjects.forEach(object => object.destroy());
+      this.markers.forEach(marker => marker.destroy());
+      if (this.player) {
+        this.tweens.killTweensOf(this.player);
+        this.player.destroy();
+      }
+      this.worldGraphics = null;
+      this.player = null;
+      this.dynamicObjects = [];
+      this.markers = [];
+      this.obstacles = [];
+    }
+
+    drawStage(stage) {
+      const g = this.add.graphics().setDepth(0);
+      this.worldGraphics = g;
+      if (stage === "entry") this.drawEntryBaked();
+      if (stage === "monkeys") this.drawTrail(g);
+      if (stage === "tourists") this.drawBeach(g);
+      if (stage === "boat") this.drawRiver(g);
+      if (stage === "beach") this.drawOtherShore(g);
+    }
+
+    drawEntry(g) {
+      // Vista inspirada en el acceso real: selva detrás, letras elevadas,
+      // baranda y una explanada amplia para visitantes delante de ella.
+      g.fillStyle(0x1e3829, 1).fillRect(0, 0, W, H);
+      g.fillStyle(0x274431, 1).fillEllipse(90, 112, 260, 245).fillEllipse(252, 75, 310, 190).fillEllipse(560, 82, 330, 220).fillEllipse(752, 138, 210, 255);
+      g.fillStyle(0x365b39, 1).fillEllipse(55, 194, 245, 125).fillEllipse(184, 167, 230, 115).fillEllipse(612, 174, 260, 132).fillEllipse(777, 208, 220, 150);
+      for (let i = 0; i < 14; i++) {
+        const x = i * 62 - 18;
+        g.fillStyle(i % 2 ? 0x183425 : 0x213d2a, 1).fillRect(x, 122 + (i % 3) * 17, 5, 95);
+        g.fillStyle(i % 2 ? 0x466c3e : 0x3b6039, 1).fillEllipse(x + 9, 109 + (i % 4) * 12, 82, 62);
+      }
+      // Pavimento público: todas las luces quedan delante de la baranda.
+      g.fillStyle(0x252c29, 1).fillRect(0, 222, W, 248);
+      g.fillStyle(0x9d9c8b, 1).fillRect(0, 231, W, 9);
+      g.fillStyle(0xc5c2ad, 1).fillRect(0, 242, W, 228);
+      g.fillStyle(0xd3d0bd, 1).fillRect(0, 243, W, 8);
+      // Letras elevadas, de colores, sin un panel que tape el bosque.
+      const letters = [..."PTO MISAHUALLÍ"];
+      const colors = ["#f0ca48", "#43a9ba", "#e95b44", "#f3d24f", "#43a9ba", "#e95b44", "#f0ca48", "#47a55b", "#e65a48", "#35a5b5", "#eac441", "#e45b48", "#4aa75c", "#31a6b5"];
+      let cursorX = 143;
+      letters.forEach((letter, index) => {
+        const space = letter === " " ? 20 : 38;
+        if (letter !== " ") {
+          g.fillStyle(0x594735, 1).fillRoundedRect(cursorX + 2, 149, 33, 49, 3);
+          this.addWorldText(cursorX + 18.5, 112, letter, { fontFamily: "Outfit, sans-serif", fontSize: "40px", fontStyle: "bold", color: colors[index], stroke: "#302d26", strokeThickness: 3, shadow: { offsetX: 2, offsetY: 3, color: "#171d18", blur: 2, fill: true } }).setOrigin(0.5, 0);
+        }
+        cursorX += space;
+      });
+      // Baranda blanca al frente del rótulo, como en la referencia.
+      g.fillStyle(0xe6e8dc, 1).fillRect(0, 191, W, 5).fillRect(0, 216, W, 5);
+      g.fillStyle(0xf5f3e9, 1);
+      for (let x = 12; x < W; x += 39) g.fillRoundedRect(x, 191, 5, 30, 2);
+      g.fillStyle(0xf5f3e9, 1).fillRoundedRect(0, 187, W, 8, 3).fillRoundedRect(0, 212, W, 8, 3);
+      // Juntas y marcas suaves del pavimento.
+      g.lineStyle(1, 0xaaa997, .48);
+      for (let y = 280; y < H; y += 48) g.lineBetween(0, y, W, y);
+      for (let x = 90; x < W; x += 145) g.lineBetween(x, 252, x - 25, H);
+      this.drawTree(g, 28, 155, .86); this.drawTree(g, 775, 161, .9);
+      this.addWorldText(400, 426, "EXPLANADA PÚBLICA · CAMINO A LA PLAYA", { fontFamily: "DM Sans, sans-serif", fontSize: "11px", fontStyle: "bold", color: "#354038" }).setOrigin(.5);
+    }
+
+    drawEntryBaked() {
+      // La entrada se dibuja una sola vez en un lienzo y se muestra como UNA imagen fija:
+      // sin formas ni textos que se redibujen en cada cuadro, así no hay nada que parpadee.
+      const key = 'entry-bg';
+      if (!this.textures.exists(key)) {
+        const tex = this.textures.createCanvas(key, W * SCALE, H * SCALE);
+        const c = tex.getContext();
+        c.scale(SCALE, SCALE);
+        const rect = (x, y, w, h, color) => { c.fillStyle = color; c.fillRect(x, y, w, h); };
+        const oval = (x, y, w, h, color) => { c.fillStyle = color; c.beginPath(); c.ellipse(x, y, w / 2, h / 2, 0, 0, Math.PI * 2); c.fill(); };
+        const round = (x, y, w, h, r, color) => { c.fillStyle = color; c.beginPath(); c.moveTo(x + r, y); c.arcTo(x + w, y, x + w, y + h, r); c.arcTo(x + w, y + h, x, y + h, r); c.arcTo(x, y + h, x, y, r); c.arcTo(x, y, x + w, y, r); c.closePath(); c.fill(); };
+        // Cielo y selva en capas
+        const sky = c.createLinearGradient(0, 0, 0, 200);
+        sky.addColorStop(0, '#b4d9c3'); sky.addColorStop(1, '#eaf0cb');
+        rect(0, 0, W, 230, sky);
+        [[60, 150, 300, 150, '#5b9466'], [270, 140, 330, 130, '#528c5d'], [530, 150, 350, 150, '#5b9466'], [770, 140, 270, 140, '#528c5d']].forEach(a => oval(...a, a[4]));
+        for (let i = 0; i < 16; i++) oval(i * 54 - 10, 172 + (i % 3) * 9, 100, 74, i % 2 ? '#2f6a43' : '#3a7a4b');
+        for (let i = 0; i < 13; i++) {
+          const x = i * 64 - 8;
+          rect(x + 8, 150 + (i % 3) * 14, 6, 80, '#2a4631');
+          oval(x + 11, 142 + (i % 4) * 10, 94, 62, i % 2 ? '#2d6b3f' : '#378049');
+          oval(x + 1, 130 + (i % 3) * 8, 52, 34, '#4c9a5a');
+        }
+        // Muro de piedra con las letras del puerto
+        c.save(); c.shadowColor = 'rgba(0,0,0,.3)'; c.shadowBlur = 8; c.shadowOffsetY = 3;
+        rect(0, 190, W, 34, '#9a977f'); c.restore();
+        rect(0, 190, W, 6, '#bdbaa3');
+        c.strokeStyle = 'rgba(70,66,52,.35)'; c.lineWidth = 1;
+        for (let row = 0; row < 2; row++) {
+          const y0 = 196 + row * 14;
+          c.beginPath(); c.moveTo(0, y0 + 14); c.lineTo(W, y0 + 14); c.stroke();
+          for (let x = (row % 2) * 24; x < W; x += 48) { c.beginPath(); c.moveTo(x, y0); c.lineTo(x, y0 + 14); c.stroke(); }
+        }
+        c.font = '800 44px Outfit, sans-serif'; c.textAlign = 'center'; c.textBaseline = 'alphabetic'; c.lineJoin = 'round';
+        const chars = [...'PTO MISAHUALLÍ'];
+        const colors = ['#f0ca48', '#43a9ba', '#e95b44', '#f3d24f', '#43a9ba', '#e95b44', '#f0ca48', '#47a55b', '#e65a48', '#35a5b5', '#eac441', '#e45b48', '#4aa75c', '#31a6b5'];
+        const widths = chars.map(ch => ch === ' ' ? 22 : c.measureText(ch).width + 14);
+        let x = 400 - widths.reduce((a, b) => a + b, 0) / 2;
+        chars.forEach((ch, i) => {
+          if (ch !== ' ') {
+            c.save(); c.shadowColor = 'rgba(0,0,0,.35)'; c.shadowBlur = 5; c.shadowOffsetY = 3;
+            round(x + 1, 132, widths[i] - 2, 60, 5, '#5a4836'); c.restore();
+            c.lineWidth = 5; c.strokeStyle = '#2b2a24'; c.strokeText(ch, x + widths[i] / 2, 180);
+            c.fillStyle = colors[i]; c.fillText(ch, x + widths[i] / 2, 180);
+          }
+          x += widths[i];
+        });
+        // Explanada con perspectiva
+        rect(0, 224, W, 246, '#d2cdb6');
+        const floor = c.createLinearGradient(0, 224, 0, 470);
+        floor.addColorStop(0, 'rgba(70,64,44,.28)'); floor.addColorStop(0.18, 'rgba(70,64,44,0)'); floor.addColorStop(1, 'rgba(255,255,240,.18)');
+        rect(0, 224, W, 246, floor);
+        c.strokeStyle = 'rgba(120,114,92,.38)'; c.lineWidth = 1.2;
+        [252, 290, 336, 392, 458].forEach(y => { c.beginPath(); c.moveTo(0, y); c.lineTo(W, y); c.stroke(); });
+        for (let x0 = -400; x0 <= 1200; x0 += 130) { c.beginPath(); c.moveTo(400 + (x0 - 400) * 0.55, 224); c.lineTo(x0, 470); c.stroke(); }
+        // Jardineras a los lados
+        [60, 740].forEach(px => {
+          round(px - 22, 254, 44, 24, 5, '#7a5a3c');
+          oval(px, 247, 50, 28, '#3f8a4f'); oval(px - 9, 240, 24, 17, '#5aa65f'); oval(px + 10, 242, 22, 15, '#4a9a55');
+        });
+        c.font = '700 11px "DM Sans", sans-serif'; c.fillStyle = '#5a6057';
+        c.fillText('EXPLANADA PÚBLICA · CAMINO A LA PLAYA', 400, 436);
+        tex.refresh();
+      }
+      const image = this.add.image(0, 0, key).setOrigin(0, 0).setDisplaySize(W, H).setDepth(0);
+      this.dynamicObjects.push(image);
+    }
+
+    drawTrail(g) {
+      g.fillStyle(0x274a34, 1).fillRect(0, 0, W, H);
+      // Árboles de selva alta solo en las franjas laterales; dejan libre el camino.
+      [[58,58,.85],[158,140,.72],[76,245,.96],[194,354,.76],[43,420,.8],[742,73,.91],[642,160,.8],[728,255,.95],[609,360,.82],[760,419,.76]].forEach(([x,y,s],i) => {
+        if (i % 3 === 1) this.drawPalm(g, x, y, s);
+        else this.drawTree(g, x, y, s);
+      });
+      g.fillStyle(0x8d8053, 1);
+      g.beginPath(); g.moveTo(230, 470); g.lineTo(320, 0); g.lineTo(480, 0); g.lineTo(580, 470); g.closePath(); g.fillPath();
+      g.fillStyle(0xb7a36c, .72);
+      g.beginPath(); g.moveTo(360, 470); g.lineTo(380, 0); g.lineTo(420, 0); g.lineTo(445, 470); g.closePath(); g.fillPath();
+      this.addWorldText(400, 24, "SENDERO A LA PLAYA", { fontFamily: "DM Sans, sans-serif", fontSize: "11px", fontStyle: "bold", color: "#fff0bd", stroke: "#274733", strokeThickness: 3 }).setOrigin(.5, 0);
+    }
+
+    drawBeach(g) {
+      g.fillStyle(0xd5c28f, 1).fillRect(0, 0, W, H);
+      // El recorrido empieza en la arena y termina en el bote, ya sobre el agua.
+      g.fillStyle(0x668d8b, 1).fillRect(0, 310, W, 160);
+      g.fillStyle(0x8bb2a5, .58);
+      for (let i = 0; i < 8; i++) g.fillRoundedRect(i * 107 - 10, 333 + (i % 3) * 27, 61, 3, 2);
+      this.drawPalm(g, 54, 71, 1.02); this.drawTree(g, 752, 74, .95);
+      this.drawUmbrella(g, 136, 155, 0xe87957); this.drawUmbrella(g, 675, 182, 0xe1a951);
+      // Canoa amarrada dentro del río; el personaje llega caminando desde la arena.
+      g.fillStyle(0x805331, 1).fillEllipse(400, 395, 112, 28);
+      g.fillStyle(0xd1ae72, 1).fillRect(366, 392, 68, 3);
+      this.addWorldText(400, 367, "BOTE EN EL AGUA", { fontFamily: "DM Sans, sans-serif", fontSize: "11px", fontStyle: "bold", color: "#fff5d3", stroke: "#355b5c", strokeThickness: 3 }).setOrigin(.5, 0);
+      this.addWorldText(400, 287, "PLAYA DE MISAHUALLÍ", { fontFamily: "DM Sans, sans-serif", fontSize: "12px", fontStyle: "bold", color: "#fff5d3", stroke: "#786849", strokeThickness: 3 }).setOrigin(.5);
+    }
+
+    drawRiver(g) {
+      g.fillStyle(0x567c70, 1).fillRect(0, 0, W, H);
+      g.fillStyle(0x477068, 1);
+      g.beginPath(); g.moveTo(0, 0); g.lineTo(202, 0); g.lineTo(160, 95); g.lineTo(216, 205); g.lineTo(160, 310); g.lineTo(220, 470); g.lineTo(0, 470); g.closePath(); g.fillPath();
+      g.beginPath(); g.moveTo(800, 0); g.lineTo(607, 0); g.lineTo(645, 110); g.lineTo(590, 215); g.lineTo(651, 330); g.lineTo(590, 470); g.lineTo(800, 470); g.closePath(); g.fillPath();
+      g.fillStyle(0x4d7f84, 1).fillRect(190, 0, 420, 470);
+      g.fillStyle(0xa8c8b7, .28);
+      for (let i = 0; i < 16; i++) g.fillRoundedRect(215 + ((i * 83) % 360), (i * 67) % 455, 22 + (i % 4) * 12, 2, 1);
+      this.drawTree(g, 70, 86, .78); this.drawTree(g, 730, 120, .88);
+      this.addWorldText(400, 24, "RÍO NAPO · CRUCE EN CANOA", { fontFamily: "DM Sans, sans-serif", fontSize: "11px", fontStyle: "bold", color: "#f4f5d6", stroke: "#284c4c", strokeThickness: 3 }).setOrigin(.5, 0);
+    }
+
+    drawOtherShore(g) {
+      g.fillStyle(0x4e7b78, 1).fillRect(0, 0, W, H);
+      g.fillStyle(0x8db0a0, .42).fillRect(0, 115, W, 7).fillRect(0, 140, W, 3);
+      g.fillStyle(0xd8c596, 1);
+      g.beginPath(); g.moveTo(0, 153); g.lineTo(800, 179); g.lineTo(800, 470); g.lineTo(0, 470); g.closePath(); g.fillPath();
+      this.drawTree(g, 82, 230, 1.04); this.drawTree(g, 727, 248, 1.08);
+      this.drawUmbrella(g, 184, 340, 0xe87957); this.drawUmbrella(g, 617, 365, 0xe1a951);
+      this.addWorldText(400, 34, "LA OTRA ORILLA", { fontFamily: "DM Sans, sans-serif", fontSize: "12px", fontStyle: "bold", color: "#fff4c9", stroke: "#315650", strokeThickness: 3 }).setOrigin(.5, 0);
+    }
+
+    drawTree(g, x, y, scale = 1) {
+      g.fillStyle(0x70543b, 1).fillRoundedRect(x - 4 * scale, y + 10 * scale, 8 * scale, 34 * scale, 3 * scale);
+      const greens = [0x315d3d, 0x3e6b45, 0x47744a];
+      g.fillStyle(greens[Math.floor(x + y) % greens.length], 1);
+      g.fillCircle(x, y, 20 * scale).fillCircle(x - 14 * scale, y + 6 * scale, 14 * scale).fillCircle(x + 14 * scale, y + 7 * scale, 15 * scale);
+      g.fillStyle(0x77975a, .86).fillCircle(x - 6 * scale, y - 7 * scale, 6 * scale).fillCircle(x + 9 * scale, y + 2 * scale, 5 * scale);
+    }
+
+    drawPalm(g, x, y, scale = 1) {
+      g.lineStyle(6 * scale, 0x70543b, 1).lineBetween(x, y + 48 * scale, x + 5 * scale, y - 3 * scale);
+      g.lineStyle(3 * scale, 0x47744a, 1);
+      const crownX = x + 5 * scale, crownY = y - 3 * scale;
+      [[-42,-24],[-31,-36],[-16,-42],[0,-43],[18,-39],[34,-29],[43,-16],[-35,-11],[-22,-20],[25,-18],[37,-7]].forEach(([dx,dy]) => {
+        g.lineBetween(crownX, crownY, crownX + dx * scale, crownY + dy * scale);
+      });
+      g.fillStyle(0x789456, 1).fillCircle(crownX, crownY, 5 * scale);
+    }
+
+    drawUmbrella(g, x, y, color) {
+      g.fillStyle(0x684a34, 1).fillRect(x - 2, y, 4, 50);
+      g.fillStyle(color, 1);
+      g.beginPath(); g.moveTo(x - 38, y + 1); g.lineTo(x, y - 25); g.lineTo(x + 38, y + 1); g.closePath(); g.fillPath();
+      g.lineStyle(2, 0x593f2e, 1).lineBetween(x - 38, y + 1, x + 38, y + 1);
+    }
+
+    addWorldText(x, y, text, style) {
+      const object = this.add.text(x, y, text, style).setResolution(SCALE).setDepth(3);
+      this.dynamicObjects.push(object);
+      return object;
+    }
+
+    createPlayer(type) {
+      const positions = {
+        entry: [400, 392], monkeys: [400, 410], tourists: [400, 78], boat: [400, 388], beach: [400, 411]
+      };
+      const [x, y] = positions[this.stage] || [400, 392];
+      const player = this.add.container(x, y).setDepth(10);
+      this.player = player;
+      player.add(this.add.ellipse(0, 14, type === "boat" ? 42 : 25, 10, 0x13251d, .33));
+      if (type === "boat") {
+        const hull = this.add.graphics();
+        hull.fillStyle(0x805331, 1); hull.beginPath(); hull.moveTo(-29, -4); hull.lineTo(-20, -13); hull.lineTo(22, -13); hull.lineTo(31, -4); hull.lineTo(22, 10); hull.lineTo(-22, 10); hull.closePath(); hull.fillPath();
+        hull.lineStyle(2, 0xd1ae72, 1).lineBetween(-18, -3, 20, -3);
+        player.add(hull);
+        player.add(this.add.ellipse(0, -3, 15, 19, 0xe59c58));
+        player.add(this.add.circle(0, -15, 7, 0xf0bd83));
+        player.add(this.add.line(0, 0, 13, -5, 31, -28, 0xd5c58e).setLineWidth(3));
+      } else {
+        player.add(this.add.ellipse(0, 1, 19, 24, 0xe59c58));
+        player.add(this.add.rectangle(-9, 2, 7, 14, 0x536f4b));
+        player.add(this.add.circle(0, -14, 9, 0xf0bd83));
+        player.add(this.add.arc(0, -17, 9, 180, 360, false, 0x352c25).setStrokeStyle(5, 0x352c25));
+        player.add(this.add.ellipse(0, -22, 23, 7, 0x6d5939));
+      }
+    }
+
+    createFactLights(facts) {
+      const points = this.stage === "entry"
+        ? [[.14,.64],[.32,.77],[.50,.66],[.68,.79],[.86,.64]]
+        : [[.16,.28],[.34,.62],[.5,.34],[.68,.66],[.84,.3]];
+      facts.forEach((fact, index) => {
+        const [px, py] = points[index];
+        const marker = this.add.container(px * W, py * H).setDepth(7);
+        const glow = this.add.circle(0, 0, 28, 0xe4f59e, .16);
+        const ring = this.add.circle(0, 0, 15, 0xe4f59e, .22).setStrokeStyle(2, 0xf6ffd4, .95);
+        const orb = this.add.circle(0, 0, 7, 0xfff6ba, 1);
+        const shine = this.add.circle(-2, -3, 2, 0xffffff, 1);
+        marker.add([this.add.circle(0, 0, 19, 0x1d3a2a, 0.28), glow, ring, orb, shine]);
+        this.tweens.add({ targets: ring, scale: 1.35, duration: 1100 + index * 140, yoyo: true, repeat: -1, ease: "Sine.easeInOut" });
+        this.tweens.add({ targets: glow, scale: 1.2, duration: 1300 + index * 90, yoyo: true, repeat: -1, ease: "Sine.easeInOut" });
+        this.markers.push(marker);
+      });
+    }
+
+    createTrailMonkeys() {
+      this.spawnElapsed = 0;
+      this.monkeyInterval = .9;
+    }
+
+    createTouristRows() {
+      const lanes = [118, 178, 238, 298];
+      const shirts = [0xe36d57, 0x507caf, 0xd6a33e, 0x7166a7, 0x4f8d70];
+      lanes.forEach((y, lane) => {
+        const direction = Phaser.Math.Between(0, 1) ? 1 : -1;
+        const count = Phaser.Math.Between(4, 6);
+        for (let index = 0; index < count; index++) {
+          const tourist = this.makeTourist(shirts[(lane + index) % shirts.length]);
+          tourist.x = 20 + index * (760 / count) + Phaser.Math.Between(0, 60);
+          tourist.y = y;
+          this.dynamicObjects.push(tourist);
+          this.obstacles.push({ node: tourist, dir: direction, speed: Phaser.Math.Between(60, 120), pause: Phaser.Math.FloatBetween(0.3, 3), kind: "tourist" });
+        }
+      });
+    }
+
+    createLocalHosts() {
+      const hosts = [
+        { x: 76, y: 250, shirt: 0x587b4b, skin: 0x985f43 },
+        { x: 724, y: 215, shirt: 0x9c6547, skin: 0xb97854 },
+        { x: 113, y: 82, shirt: 0x547b85, skin: 0x8e5a40 },
+        { x: 690, y: 80, shirt: 0xb38342, skin: 0xa56b4b }
+      ];
+      hosts.forEach(host => {
+        const person = this.makeCommunityHost(host.shirt, host.skin);
+        person.setPosition(host.x, host.y).setDepth(6);
+        this.dynamicObjects.push(person);
+        this.addWorldText(host.x, host.y - 34, "GUÍA LOCAL", { fontFamily: "DM Sans, sans-serif", fontSize: "8px", fontStyle: "bold", color: "#fff9de", stroke: "#53624b", strokeThickness: 3 }).setOrigin(.5);
+      });
+    }
+
+    makeCommunityHost(shirtColor, skinColor) {
+      const person = this.add.container(0, 0);
+      person.add(this.add.ellipse(0, 13, 27, 8, 0x443c34, .25));
+      person.add(this.add.rectangle(0, 1, 17, 24, shirtColor));
+      person.add(this.add.rectangle(-5, 20, 5, 14, 0x374437));
+      person.add(this.add.rectangle(5, 20, 5, 14, 0x374437));
+      person.add(this.add.circle(0, -16, 8, skinColor));
+      person.add(this.add.arc(0, -18, 8, 180, 360, false, 0x30291f));
+      person.add(this.add.rectangle(5, 0, 3, 12, 0xe8d494));
+      return person;
+    }
+
+    makeTourist(shirtColor) {
+      const group = this.add.container(0, 0).setDepth(8);
+      group.add(this.add.ellipse(0, 11, 27, 8, 0x443c34, .28));
+      group.add(this.add.rectangle(0, 1, 15, 24, shirtColor));
+      group.add(this.add.circle(0, -15, 8, 0xdca87f));
+      group.add(this.add.ellipse(0, -21, 18, 5, 0xe1d5bd));
+      return group;
+    }
+
+    makeMonkey(x, y) {
+      const group = this.add.container(x, y).setDepth(8);
+      group.add(this.add.circle(-12, -3, 10, 0x6b4a34));
+      group.add(this.add.circle(12, -3, 10, 0x6b4a34));
+      group.add(this.add.circle(0, -3, 16, 0x805b3e));
+      group.add(this.add.ellipse(0, 2, 17, 12, 0xe5c59b));
+      group.add(this.add.circle(-5, -5, 2.4, 0x171a16));
+      group.add(this.add.circle(5, -5, 2.4, 0x171a16));
+      group.add(this.add.ellipse(0, 3, 3.5, 2.5, 0x3d2a24));
+      group.add(this.add.ellipse(0, 17, 17, 7, 0x5b4435));
+      return group;
+    }
+
+    makeRiverFish(x, y, species, direction) {
+      const group = this.add.container(x, y).setDepth(8);
+      const palette = { bocachico: 0xd5a94f, palometa: 0x72a99a, pintadillo: 0x8c7765 };
+      const fish = this.add.graphics();
+      fish.fillStyle(palette[species], 1);
+      fish.fillTriangle(-17, 0, -34, -12, -34, 12);
+      fish.fillEllipse(0, 0, 46, 25);
+      fish.fillStyle(0xf0d69c, 1).fillTriangle(-8, -10, 8, -10, 0, -22);
+      fish.fillStyle(0xf4e8c8, 0.55).fillEllipse(2, 6, 28, 8);
+      fish.fillStyle(0xffffff, 1).fillCircle(13, -3, 4);
+      fish.fillStyle(0x15241f, 1).fillCircle(14, -3, 2.2);
+      fish.lineStyle(1.5, 0x35564c, 1);
+      fish.beginPath(); fish.arc(5, 0, 9, -1.1, 1.1); fish.strokePath();
+      group.add(fish);
+      
+      
+      
+      
+      if (species === "pintadillo") {
+        group.add(this.add.line(0, 4, 13, 0, 23, 5, 0xe0c9a5).setLineWidth(1.5));
+        group.add(this.add.line(0, 4, 12, 6, 21, 10, 0xe0c9a5).setLineWidth(1.5));
+      }
+      group.setRotation(direction > 0 ? Math.PI / 2 : -Math.PI / 2);
+      group.setData("species", species);
+      return group;
+    }
+
+    moveVector(delta) {
+      let dx = 0;
+      let dy = 0;
+      if (this.cursors.left.isDown || this.keys.A.isDown) dx -= 1;
+      if (this.cursors.right.isDown || this.keys.D.isDown) dx += 1;
+      if (this.cursors.up.isDown || this.keys.W.isDown) dy -= 1;
+      if (this.cursors.down.isDown || this.keys.S.isDown) dy += 1;
+      let power = 1;
+      if (!dx && !dy && touchMove.power > 0) { dx = touchMove.x; dy = touchMove.y; power = touchMove.power; }
+      if (!dx && !dy) return;
+      const length = Math.hypot(dx, dy);
+      const speed = this.stage === "boat" ? 205 : this.stage === "monkeys" ? 255 : 220;
+      this.player.x += dx / length * speed * power * delta;
+      this.player.y += dy / length * speed * power * delta;
+      if (this.stage === "monkeys") {
+        this.player.y = Phaser.Math.Clamp(this.player.y, 345, 435);
+        const pathLeft = 320 - this.player.y * 90 / 470 + 20;
+        const pathRight = 480 + this.player.y * 100 / 470 - 20;
+        this.player.x = Phaser.Math.Clamp(this.player.x, pathLeft, pathRight);
+      } else if (this.stage === "tourists") {
+        this.player.x = Phaser.Math.Clamp(this.player.x, 30, 770);
+        this.player.y = Phaser.Math.Clamp(this.player.y, 38, 444);
+      } else if (this.stage === "boat") {
+        this.player.x = Phaser.Math.Clamp(this.player.x, 226, 574);
+        this.player.y = Phaser.Math.Clamp(this.player.y, 245, 435);
+      } else if (this.stage === "entry") {
+        this.player.x = Phaser.Math.Clamp(this.player.x, 28, 772);
+        this.player.y = Phaser.Math.Clamp(this.player.y, 250, 444);
+      } else if (this.stage === "beach") {
+        this.player.x = Phaser.Math.Clamp(this.player.x, 28, 772);
+        this.player.y = Phaser.Math.Clamp(this.player.y, 155, 444);
+      } else {
+        this.player.x = Phaser.Math.Clamp(this.player.x, 28, 772);
+        this.player.y = Phaser.Math.Clamp(this.player.y, 32, 444);
+      }
+    }
+
+    update(_, deltaMs) {
+      if (!this.started || this.waiting || this.stage === "title") return;
+      const delta = Math.min(deltaMs / 1000, .05);
+      this.elapsed += delta;
+      this.hitCooldown = Math.max(0, this.hitCooldown - delta);
+      this.moveVector(delta);
+      if (this.stage === "entry" || this.stage === "beach") this.checkFactLights();
+      if (this.stage === "monkeys") this.updateMonkeys(delta);
+      if (this.stage === "tourists") this.updateTourists(delta);
+      if (this.stage === "boat") this.updateBoat(delta);
+    }
+
+    checkFactLights() {
+      const facts = this.stage === "entry" ? entryFacts : beachFacts;
+      for (let index = 0; index < facts.length; index++) {
+        if (this.discovered.has(index)) continue;
+        const marker = this.markers[index];
+        if (Phaser.Math.Distance.Between(this.player.x, this.player.y, marker.x, marker.y) <= 44) {
+          this.discovered.add(index);
+          marker.setVisible(false);
+          score += 100;
+          ui.score.textContent = String(score).padStart(3, "0");
+          playTone(560 + index * 65);
+          const isFinalLight = this.discovered.size === facts.length;
+          this.showCard(`LUZ ${this.discovered.size} DE 05`, facts[index].title, facts[index].text, "Seguir explorando", () => {
+            this.waiting = false;
+            if (isFinalLight) this.finishDiscoveryStage();
+            else this.setObjective("OBJETIVO", `Encuentra las 5 luces de datos (${this.discovered.size}/5)`, "· Acércate a cada luz");
+          });
+          this.setObjective("DESCUBIERTAS", `${this.discovered.size} de 5 luces`, "· Lee el dato y continúa");
+          return;
+        }
+      }
+    }
+
+    finishDiscoveryStage() {
+      if (this.stage === "entry") {
+        this.showCard("DESTINO 01 COMPLETADO", "Sigue por el sendero", "Ahora recorre el camino a la playa y esquiva a los monitos.", "Ir al sendero", () => this.startStage("monkeys", true));
+      } else {
+        ui.locationKicker.textContent = "RECORRIDO COMPLETADO";
+        ui.location.textContent = "Puerto Misahuallí, Napo";
+        ui.missionLabel.innerHTML = "¡DESTINO 05 COMPLETADO!";
+        ui.missionTitle.textContent = "¡Visita Misahuallí!";
+        ui.missionCopy.textContent = "La aventura continúa cuando vengas a conocerlo.";
+        this.showCard("¡RECORRIDO COMPLETADO!", "¡Visita Misahuallí!", `Descubriste diez datos y completaste los tres minijuegos. Terminaste con ${score} puntos. El río Napo y la playa te esperan.`, "Volver a jugar", () => this.beginAgain());
+      }
+    }
+
+    updateTimer(seconds, label) {
+      const value = Math.max(0, Math.ceil(seconds));
+      if (value !== this.clockText) {
+        this.clockText = value;
+        ui.objectiveLabel.textContent = label;
+        ui.objective.textContent = `${value} s restantes · ${this.lives} oportunidades`;
+      }
+    }
+
+    spawnMonkey() {
+      // Entran por el centro de la senda, que se ensancha hacia abajo.
+      if (!this.laneBag || !this.laneBag.length) this.laneBag = Phaser.Utils.Array.Shuffle([262, 294, 326, 358, 390, 422, 454, 486, 518, 550]);
+      this.monkeyCount = (this.monkeyCount || 0) + 1;
+      // Cada tercer monito apunta a donde está el jugador; los demás recorren todos los carriles del sendero.
+      const target = this.monkeyCount % 3 === 0 ? Phaser.Math.Clamp(this.player.x, 262, 550) : this.laneBag.pop();
+      const x = 400 + (target - 400) * 0.45;
+      const monkey = this.makeMonkey(x, -25);
+      this.dynamicObjects.push(monkey);
+      const vy = Phaser.Math.Between(94, 133) + Math.min(this.elapsed * 1.3, 25);
+      this.obstacles.push({ node: monkey, vy, vx: (target - x) / ((390 + 25) / vy), kind: "monkey" });
+    }
+
+    updateMonkeys(delta) {
+      this.spawnElapsed += delta;
+      if (this.spawnElapsed >= this.monkeyInterval) {
+        this.spawnElapsed = 0;
+        this.spawnMonkey();
+      }
+      for (let index = this.obstacles.length - 1; index >= 0; index--) {
+        const obstacle = this.obstacles[index];
+        obstacle.node.y += obstacle.vy * delta;
+        obstacle.node.x += (obstacle.vx || 0) * delta;
+        if (obstacle.node.y > H + 35) {
+          obstacle.node.destroy(); this.obstacles.splice(index, 1); continue;
+        }
+        if (this.hitCooldown <= 0 && Phaser.Math.Distance.Between(this.player.x, this.player.y, obstacle.node.x, obstacle.node.y) < 33) {
+          obstacle.node.destroy(); this.obstacles.splice(index, 1); this.takeHit("¡Un monito cruzó el sendero!");
+        }
+      }
+      this.updateTimer(25 - this.elapsed, "TIEMPO");
+      if (this.lives <= 0) this.offerRetry("sendero");
+      else if (this.elapsed >= 25) {
+        score += 200; ui.score.textContent = String(score).padStart(3, "0");
+        this.showCard("DESTINO 02 COMPLETADO", "¡Llegaste a la playa!", "Buen recorrido. Ahora cruza la playa hasta el bote sin chocar con los turistas.", "Ir a la playa", () => this.startStage("tourists", true));
+      }
+    }
+
+    updateTourists(delta) {
+      for (const obstacle of this.obstacles) {
+        obstacle.pause -= delta;
+        if (obstacle.pause <= 0) {
+          // Cada visitante cambia de ritmo al azar: se detiene, camina más rápido o se da la vuelta.
+          obstacle.pause = Phaser.Math.FloatBetween(1.2, 3.5);
+          obstacle.speed = Phaser.Math.Between(0, 4) === 0 ? 0 : Phaser.Math.Between(55, 125);
+          if (Phaser.Math.Between(0, 5) === 0) obstacle.dir *= -1;
+        }
+        obstacle.node.x += obstacle.dir * obstacle.speed * delta;
+        if (obstacle.dir > 0 && obstacle.node.x > W + 50) obstacle.node.x = -50;
+        if (obstacle.dir < 0 && obstacle.node.x < -50) obstacle.node.x = W + 50;
+        if (this.hitCooldown <= 0 && Phaser.Math.Distance.Between(this.player.x, this.player.y, obstacle.node.x, obstacle.node.y) < 27) {
+          this.takeHit("¡Cuidado con los turistas!", true);
+        }
+      }
+      if (this.lives <= 0) {
+        this.offerRetry("playa");
+      } else if (this.player.y > 368 && Math.abs(this.player.x - 400) < 70) {
+        score += 200; ui.score.textContent = String(score).padStart(3, "0");
+        this.showCard("DESTINO 03 COMPLETADO", "¡Al bote!", "Subiste al bote en el agua. Mantén el rumbo durante 30 segundos hasta la otra parte de la playa.", "Navegar", () => this.startStage("boat", true));
+      }
+    }
+
+    updateBoat(delta) {
+      this.spawnElapsed += delta;
+      const spawnInterval = Math.max(.58, .88 - this.elapsed * .006);
+      if (this.spawnElapsed >= spawnInterval) {
+        this.spawnElapsed = 0;
+        const species = ["bocachico", "palometa", "pintadillo"][this.fishIndex++ % 3];
+        const direction = this.fishIndex % 2 === 0 ? 1 : -1;
+        const x = Phaser.Math.Between(222, 578);
+        const y = direction > 0 ? -30 : H + 30;
+        const node = this.makeRiverFish(x, y, species, direction);
+        this.dynamicObjects.push(node);
+        this.obstacles.push({ node, vy: direction * Phaser.Math.Between(92, 132), kind: species });
+      }
+      for (let index = this.obstacles.length - 1; index >= 0; index--) {
+        const obstacle = this.obstacles[index];
+        obstacle.node.y += obstacle.vy * delta;
+        if (obstacle.node.y < -45 || obstacle.node.y > H + 45) {
+          obstacle.node.destroy(); this.obstacles.splice(index, 1); continue;
+        }
+        if (this.hitCooldown <= 0 && Phaser.Math.Distance.Between(this.player.x, this.player.y, obstacle.node.x, obstacle.node.y) < 38) {
+          obstacle.node.destroy(); this.obstacles.splice(index, 1); this.takeHit(`¡Un ${obstacle.kind} se cruza! Mantén distancia.`);
+        }
+      }
+      this.updateTimer(30 - this.elapsed, "CRUCE");
+      if (this.lives <= 0) this.offerRetry("bote");
+      else if (this.elapsed >= 30) {
+        score += 200; ui.score.textContent = String(score).padStart(3, "0");
+        this.showCard("DESTINO 04 COMPLETADO", "¡Llegaste a la otra playa!", "Ya estás en la otra orilla. Busca cinco luces más para conocer otros atractivos de Misahuallí.", "Explorar la orilla", () => this.startStage("beach", true));
+      }
+    }
+
+    takeHit(message, pushBack = false) {
+      if (this.hitCooldown > 0) return;
+      this.lives -= 1;
+      this.hitCooldown = 1;
+      if (pushBack) this.player.y = Math.min(438, this.player.y + 36);
+      this.player.alpha = .42;
+      this.tweens.add({ targets: this.player, alpha: 1, duration: 100, yoyo: true, repeat: 4, onComplete: () => { if (this.player) this.player.alpha = 1; } });
+      announce(`${message} Te quedan ${this.lives} oportunidades.`);
+      if (this.stage === "tourists") this.setObjective("OPORTUNIDADES", `${this.lives} restantes · llega al bote`, "· Evita a los turistas");
+    }
+
+    offerRetry(place) {
+      const stage = place === "sendero" ? "monkeys" : place === "playa" ? "tourists" : "boat";
+      this.showCard("INTÉNTALO OTRA VEZ", "¡Un respiro y seguimos!", "Recuperaste tus tres oportunidades. Puedes repetir este tramo.", "Reintentar", () => this.startStage(stage, true));
+    }
+
+    beginAgain() {
+      this.started = true;
+      this.stage = "title";
+      ui.overlay.classList.add("hidden");
+      score = 0;
+      ui.score.textContent = "000";
+      this.startStage("entry", true);
+    }
+  }
+
+  const config = {
+    type: Phaser.AUTO,
+    parent: "game-container",
+    width: W * SCALE,
+    height: H * SCALE,
+    backgroundColor: "#648553",
+    scene: [PortAdventureScene],
+    scale: { mode: Phaser.Scale.FIT, autoCenter: Phaser.Scale.CENTER_BOTH },
+    render: { antialias: true, pixelArt: false }
+  };
+  const fontsReady = document.fonts && document.fonts.load
+    ? Promise.race([Promise.all([document.fonts.load('700 40px Outfit'), document.fonts.load('700 11px "DM Sans"')]), new Promise(resolve => setTimeout(resolve, 2500))])
+    : Promise.resolve();
+  fontsReady.catch(() => {}).then(() => new Phaser.Game(config));
+})();
+
+</script>
+</body>
+</html>
